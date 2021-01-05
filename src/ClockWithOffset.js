@@ -104,7 +104,7 @@ function ClockWithOffset({
       <Clock size={100} renderNumbers value={currentTime} />
       <p>
         <strong>{name}:</strong> {format(getStartTime(), "h:mm a")} -{" "}
-        {format(getEndTime(), "h:mma")} {isOnline() ? "🟢" : "❌"}
+        {format(getEndTime(), "h:mm a")} {isOnline() ? "🟢" : "❌"}
       </p>
     </div>
   );
