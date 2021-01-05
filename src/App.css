@@ -23,186 +23,134 @@ h2 {
   flex-direction: column;
 }
 
-.local-clock {
-  /* background: #fdffab; */
-}
-
 /* LOS ANGELES */
-/* Jp */
-#jp-la-offline .react-clock__face {
-  background-image: linear-gradient(270deg, pink 50%, transparent 50%),
-    linear-gradient(0deg, transparent 50%, pink 50%);
+/* Manuel */
+#manuel-la-offline .react-clock__face {
+  background: conic-gradient(white 0deg 30deg, pink 30deg 300deg, white 270deg);
 }
-
-#jp-la-online .react-clock__face {
-  background-image: linear-gradient(270deg, lightgreen 50%, transparent 50%),
-    linear-gradient(0deg, transparent 50%, lightgreen 50%);
+#manuel-la-online .react-clock__face {
+  background: conic-gradient(white 0deg 30deg, lightgreen 30deg 300deg, white 270deg);
 }
 
 /* John */
 #john-la-offline .react-clock__face {
-  background-image: linear-gradient(90deg, pink 50%, transparent 50%),
-    linear-gradient(-60deg, transparent 50%, pink 50%);
+  background: conic-gradient(salmon 0deg 30deg, white 30deg 180deg, pink 180deg);
 }
-
 #john-la-online .react-clock__face {
-  background-image: linear-gradient(90deg, lightgreen 50%, transparent 50%),
-    linear-gradient(-60deg, transparent 50%, lightgreen 50%);
+  background: conic-gradient(green 0deg 30deg, white 30deg 180deg, lightgreen 180deg);
 }
 
-/* Manuel */
-#manuel-la-offline .react-clock__face {
-  background-image: linear-gradient(-60deg, pink 50%, transparent 50%),
-    linear-gradient(210deg, transparent 50%, pink 50%);
+/* Jp */
+#jp-la-offline .react-clock__face {
+  background: conic-gradient(salmon 0deg 180deg, white 180deg 270deg, pink 270deg);
 }
-
-#manuel-la-online .react-clock__face {
-  background-image: linear-gradient(-60deg, lightgreen 50%, transparent 50%),
-    linear-gradient(210deg, transparent 50%, lightgreen 50%);
+#jp-la-online .react-clock__face {
+  background: conic-gradient(green 0deg 180deg, white 180deg 270deg, lightgreen 270deg);
 }
 
 /* Dev */
 #dev-la-offline .react-clock__face {
-  background-image: linear-gradient(240deg, pink 50%, transparent 50%),
-    linear-gradient(0deg, transparent 50%, pink 50%);
+  background: conic-gradient(pink 0deg 150deg, white 150deg 270deg, salmon 270deg);
 }
-
 #dev-la-online .react-clock__face {
-  background-image: linear-gradient(240deg, lightgreen 50%, transparent 50%),
-    linear-gradient(0deg, transparent 50%, lightgreen 50%);
+  background: conic-gradient(lightgreen 0deg 150deg, white 150deg 270deg, green 270deg);
 }
 
 /* NEW YORK */
-/* Jp */
-#jp-ny-offline .react-clock__face {
-  background-image: linear-gradient(0deg, pink 50%, transparent 50%),
-    linear-gradient(90deg, transparent 50%, pink 50%);
+/* Manuel */
+#manuel-ny-offline .react-clock__face {
+  background: conic-gradient(salmon 0deg 30deg, white 30deg 120deg, pink 120deg);
 }
-
-#jp-ny-online .react-clock__face {
-  background-image: linear-gradient(0deg, lightgreen 50%, transparent 50%),
-    linear-gradient(90deg, transparent 50%, lightgreen 50%);
+#manuel-ny-online .react-clock__face {
+  background: conic-gradient(green 0deg 30deg, white 30deg 120deg, lightgreen 120deg);
 }
 
 /* John */
 #john-ny-offline .react-clock__face {
-  background-image: linear-gradient(210deg, pink 50%, transparent 50%),
-    linear-gradient(0deg, transparent 50%, pink 50%);
+  background: conic-gradient(salmon 0deg 120deg, white 120deg 270deg, pink 180deg);
 }
-
 #john-ny-online .react-clock__face {
-  background-image: linear-gradient(210deg, lightgreen 50%, transparent 50%),
-    linear-gradient(0deg, transparent 50%, lightgreen 50%);
+  background: conic-gradient(green 0deg 120deg, white 120deg 270deg, lightgreen 180deg);
 }
 
-/* Manuel */
-#manuel-ny-offline .react-clock__face {
-  background-image: linear-gradient(30deg, pink 50%, transparent 50%),
-    linear-gradient(-60deg, transparent 50%, pink 50%);
+/* Jp */
+#jp-ny-offline .react-clock__face {
+  background: conic-gradient(salmon 0deg 270deg, white 270deg);
 }
-
-#manuel-ny-online .react-clock__face {
-  background-image: linear-gradient(30deg, lightgreen 50%, transparent 50%),
-    linear-gradient(-60deg, transparent 50%, lightgreen 50%);
+#jp-ny-online .react-clock__face {
+  background: conic-gradient(green 0deg 270deg, white 270deg);
 }
 
 /* Dev */
 #dev-ny-offline .react-clock__face {
-  background-image: linear-gradient(-30deg, pink 50%, transparent 50%),
-    linear-gradient(90deg, transparent 50%, pink 50%);
+  background: conic-gradient(pink 0deg 240deg, white 240deg);
 }
-
 #dev-ny-online .react-clock__face {
-  background-image: linear-gradient(-30deg, lightgreen 50%, transparent 50%),
-    linear-gradient(90deg, transparent 50%, lightgreen 50%);
+  background: conic-gradient(lightgreen 0deg 240deg, white 240deg);
 }
 
 /* SPAIN */
-/* Jp */
-#jp-eu-offline .react-clock__face {
-  background-image: linear-gradient(-180deg, pink 50%, transparent 50%),
-    linear-gradient(-90deg, transparent 50%, pink 50%);
+/* Manuel */
+#manuel-eu-offline .react-clock__face {
+  background: conic-gradient(salmon 0deg 210deg, white 210deg 300deg, pink 300deg);
 }
-
-#jp-eu-online .react-clock__face {
-  background-image: linear-gradient(-180deg, lightgreen 50%, transparent 50%),
-    linear-gradient(-90deg, transparent 50%, lightgreen 50%);
+#manuel-eu-online .react-clock__face {
+  background: conic-gradient(green 0deg 210deg, white 210deg 300deg, lightgreen 300deg);
 }
 
 /* John */
 #john-eu-offline .react-clock__face {
-  background-image: linear-gradient(0deg, pink 50%, transparent 50%),
-    linear-gradient(210deg, transparent 50%, pink 50%);
+  background: conic-gradient(white 0deg 90deg, salmon 90deg 300deg, white 300deg);
 }
-
 #john-eu-online .react-clock__face {
-  background-image: linear-gradient(0deg, lightgreen 50%, transparent 50%),
-    linear-gradient(210deg, transparent 50%, lightgreen 50%);
+  background: conic-gradient(white 0deg 90deg, green 90deg 300deg, white 300deg);
 }
 
-/* Manuel */
-#manuel-eu-offline .react-clock__face {
-  background-image: linear-gradient(210deg, pink 50%, transparent 50%),
-    linear-gradient(120deg, transparent 50%, pink 50%);
+/* Jp */
+#jp-eu-offline .react-clock__face {
+  background: conic-gradient(pink 0deg 90deg, white 90deg 180deg, salmon 180deg);
 }
-
-#manuel-eu-online .react-clock__face {
-  background-image: linear-gradient(210deg, lightgreen 50%, transparent 50%),
-    linear-gradient(120deg, transparent 50%, lightgreen 50%);
+#jp-eu-online .react-clock__face {
+  background: conic-gradient(lightgreen 0deg 90deg, white 90deg 180deg, green 180deg);
 }
 
 /* Dev */
 #dev-eu-offline .react-clock__face {
-  background-image: linear-gradient(90deg, pink 50%, transparent 50%),
-    linear-gradient(-30deg, transparent 50%, pink 50%);
+  background: conic-gradient(salmon 0deg 60deg, white 60deg 180deg, pink 180deg);
 }
-
 #dev-eu-online .react-clock__face {
-  background-image: linear-gradient(90deg, lightgreen 50%, transparent 50%),
-    linear-gradient(-30deg, transparent 50%, lightgreen 50%);
+  background: conic-gradient(green 0deg 60deg, white 60deg 180deg, lightgreen 180deg);
 }
 
-/* India */
-/* Jp */
-#jp-as-offline .react-clock__face {
-  background-image: linear-gradient(225deg, pink 50%, transparent 50%),
-    linear-gradient(135deg, transparent 50%, pink 50%);
+/* INDIA */
+/* Manuel */
+#manuel-as-offline .react-clock__face {
+  background: conic-gradient(white 0deg 75deg, salmon 75deg 345deg, white 345deg);
 }
-
-#jp-as-online .react-clock__face {
-  background-image: linear-gradient(225deg, lightgreen 50%, transparent 50%),
-    linear-gradient(135deg, transparent 50%, lightgreen 50%);
+#manuel-as-online .react-clock__face {
+  background: conic-gradient(white 0deg 75deg, green 75deg 345deg, white 345deg);
 }
 
 /* John */
 #john-as-offline .react-clock__face {
-  background-image: linear-gradient(165deg, pink 50%, transparent 50%),
-    linear-gradient(315deg, transparent 50%, pink 50%);
+  background: conic-gradient(pink 0deg 75deg, white 75deg 225deg, salmon 225deg);
 }
-
 #john-as-online .react-clock__face {
-  background-image: linear-gradient(165deg, lightgreen 50%, transparent 50%),
-    linear-gradient(315deg, transparent 50%, lightgreen 50%);
+  background: conic-gradient(lightgreen 0deg 75deg, white 75deg 225deg, green 225deg);
 }
 
-/* Manuel */
-#manuel-as-offline .react-clock__face {
-  background-image: linear-gradient(-15deg, pink 50%, transparent 50%),
-    linear-gradient(255deg, transparent 50%, pink 50%);
+/* Jp */
+#jp-as-offline .react-clock__face {
+  background: conic-gradient(pink 0deg 225deg, white 225deg 310deg, salmon 310deg);
 }
-
-#manuel-as-online .react-clock__face {
-  background-image: linear-gradient(-15deg, lightgreen 50%, transparent 50%),
-    linear-gradient(255deg, transparent 50%, lightgreen 50%);
+#jp-as-online .react-clock__face {
+  background: conic-gradient(lightgreen 0deg 225deg, white 225deg 310deg, green 310deg);
 }
 
 /* Dev */
 #dev-as-offline .react-clock__face {
-  background-image: linear-gradient(285deg, pink 50%, transparent 50%),
-    linear-gradient(45deg, transparent 50%, pink 50%);
+  background: conic-gradient(pink 0deg 240deg, white 240deg);
 }
-
 #dev-as-online .react-clock__face {
-  background-image: linear-gradient(285deg, lightgreen 50%, transparent 50%),
-    linear-gradient(45deg, transparent 50%, lightgreen 50%);
+  background: conic-gradient(green 0deg 195deg, white 195deg 315deg, lightgreen 315deg);
 }
