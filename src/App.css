@@ -36,6 +36,27 @@ h1, h2 {
   flex-direction: column;
 }
 
+.box {
+  width: 30px;
+  height: 30px;
+}
+
+.lightgreen {
+  background: lightgreen;
+}
+
+.green {
+  background: green;
+}
+
+.pink {
+  background: pink;
+}
+
+.salmon {
+  background: salmon;
+}
+
 /* LOS ANGELES */
 /* Manuel */
 #manuel-la-offline .react-clock__face {

@@ -136,6 +136,25 @@ function App() {
         </button>
       </div>
       {renderRow()}
+      <hr />
+      <div className="button-row">
+        <div className="btn box lightgreen" />
+        <span>
+          AM <small>(online)</small>
+        </span>
+        <div className="btn box green" />
+        <span>
+          PM <small>(online)</small>
+        </span>
+        <div className="btn box pink" />
+        <span>
+          AM <small>(offline)</small>
+        </span>
+        <div className="btn box salmon" />
+        <span>
+          PM <small>(offline)</small>
+        </span>
+      </div>
     </div>
   );
 }
