@@ -4,10 +4,10 @@ import "react-clock/dist/Clock.css";
 import "./App.css";
 
 const LA = [
-  { name: "Manuel", startHours: 1, endHours: 10 },
-  { name: "John", startHours: 6, endHours: 13 },
-  { name: "Jp", startHours: 9, endHours: 18 },
-  { name: "Dev", startHours: 21, endHours: 29 },
+  { name: "Manuel", startHours: 1, endHours: 10, hoursAvailable: 9 },
+  { name: "John", startHours: 6, endHours: 13, hoursAvailable: 7 },
+  { name: "Jp", startHours: 9, endHours: 18, hoursAvailable: 9 },
+  { name: "Dev", startHours: 21, endHours: 5, hoursAvailable: 8 },
 ];
 
 // Use Los Angeles as the pivot
@@ -16,6 +16,7 @@ function generateData({ offset }) {
     name: LA[i].name,
     startHours: LA[i].startHours + offset,
     endHours: LA[i].endHours + offset,
+    hoursAvailable: LA[i].hoursAvailable,
   }));
 }
 
@@ -32,6 +33,7 @@ function App() {
             name={employee.name}
             startHours={employee.startHours}
             endHours={employee.endHours}
+            hoursAvailable={employee.hoursAvailable}
           />
         ))}
       </div>
@@ -45,6 +47,7 @@ function App() {
             name={employee.name}
             startHours={employee.startHours}
             endHours={employee.endHours}
+            hoursAvailable={employee.hoursAvailable}
           />
         ))}
       </div>
@@ -58,6 +61,7 @@ function App() {
             name={employee.name}
             startHours={employee.startHours}
             endHours={employee.endHours}
+            hoursAvailable={employee.hoursAvailable}
           />
         ))}
       </div>
@@ -72,6 +76,7 @@ function App() {
             startHours={employee.startHours}
             endHours={employee.endHours}
             minutesOffset={30}
+            hoursAvailable={employee.hoursAvailable}
           />
         ))}
       </div>

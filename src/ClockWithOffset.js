@@ -4,6 +4,8 @@ import {
   startOfDay,
   addHours,
   addMinutes,
+  subHours,
+  getHours,
   isWithinInterval,
   format,
 } from "date-fns";
@@ -22,6 +24,7 @@ function ClockWithOffset({
   startHours,
   endHours,
   minutesOffset,
+  hoursAvailable,
 }) {
   const [currentTime, setCurrentTime] = useState(
     utcToZonedTime(new Date(), offset)
@@ -39,10 +42,9 @@ function ClockWithOffset({
   }, [offset]);
 
   function isOnline() {
-    const startTime = getStartTimeWithOffset();
-    const endTime = getEndTimeWithOffset();
-    const time = zonedTimeToUtc(currentTime, offset);
-    return isWithinInterval(time, { start: startTime, end: endTime });
+    const { start, end, current } = getTimeWithOffset();
+
+    return isWithinInterval(current, { start, end });
   }
 
   /**
@@ -60,18 +62,20 @@ function ClockWithOffset({
       : `${name.toLowerCase()}-${abbrev}-offline`;
   }
 
-  function getStartTimeWithOffset() {
-    return zonedTimeToUtc(
+  function getTimeWithOffset() {
+    let start = zonedTimeToUtc(
       addMinutes(addHours(startOfDay(new Date()), startHours), minutesOffset),
       offset
     );
-  }
+    let current = zonedTimeToUtc(currentTime, offset);
 
-  function getEndTimeWithOffset() {
-    return zonedTimeToUtc(
-      addMinutes(addHours(startOfDay(new Date()), endHours), minutesOffset),
-      offset
-    );
+    const currentHour = getHours(current);
+
+    if (startHours > endHours && currentHour >= 0 && currentHour <= 12) {
+      start = subHours(start, 24);
+    }
+
+    return { start, end: addHours(start, hoursAvailable), current };
   }
 
   function getStartTime() {
@@ -88,7 +92,12 @@ function ClockWithOffset({
     );
   }
 
-  // console.log(currentTime, "\n", getStartTime(), "\n", getEndTime());
+  // if (offset === "Asia/Kolkata" && name === "Dev") {
+  //   console.log(
+  //     zonedTimeToUtc(currentTime, offset),
+  //     getTimeWithOffset()
+  //   );
+  // }
 
   return (
     <div id={getId()} className="clock-wrapper">
