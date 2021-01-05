@@ -6,14 +6,88 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
+@media (min-width: 700px) {
+  .clock-row {
+    flex-direction: row;
+  }
+}
+
+.clock-wrapper {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.local-clock {
+  /* background: #fdffab; */
+}
+
+/* LOS ANGELES */
+/* Jp */
+#jp-la-offline .react-clock__face {
+  background-image: linear-gradient(270deg, pink 50%, transparent 50%),
+    linear-gradient(0deg, transparent 50%, pink 50%);
+}
+
+#jp-la-online .react-clock__face {
+  background-image: linear-gradient(270deg, lightgreen 50%, transparent 50%),
+    linear-gradient(0deg, transparent 50%, lightgreen 50%);
+}
+
+/* John */
+#john-la-offline .react-clock__face {
+  background-image: linear-gradient(90deg, pink 50%, transparent 50%),
+    linear-gradient(-60deg, transparent 50%, pink 50%);
+}
+
+#john-la-online .react-clock__face {
+  background-image: linear-gradient(90deg, lightgreen 50%, transparent 50%),
+    linear-gradient(-60deg, transparent 50%, lightgreen 50%);
+}
+
+/* Manuel */
+#manuel-la-offline .react-clock__face {
+  background-image: linear-gradient(-60deg, pink 50%, transparent 50%),
+    linear-gradient(210deg, transparent 50%, pink 50%);
+}
+
+#manuel-la-online .react-clock__face {
+  background-image: linear-gradient(-60deg, lightgreen 50%, transparent 50%),
+    linear-gradient(210deg, transparent 50%, lightgreen 50%);
+}
+
+/* Dev */
+#dev-la-offline .react-clock__face {
+  background-image: linear-gradient(240deg, pink 50%, transparent 50%),
+    linear-gradient(0deg, transparent 50%, pink 50%);
+}
+
+#dev-la-online .react-clock__face {
+  background-image: linear-gradient(240deg, lightgreen 50%, transparent 50%),
+    linear-gradient(0deg, transparent 50%, lightgreen 50%);
+}
 
 /* NEW YORK */
+/* Jp */
+#jp-ny-offline .react-clock__face {
+  background-image: linear-gradient(0deg, pink 50%, transparent 50%),
+    linear-gradient(90deg, transparent 50%, pink 50%);
+}
 
+#jp-ny-online .react-clock__face {
+  background-image: linear-gradient(0deg, lightgreen 50%, transparent 50%),
+    linear-gradient(90deg, transparent 50%, lightgreen 50%);
+}
+
+/* John */
 #john-ny-offline .react-clock__face {
-  background-image: linear-gradient(210deg, salmon 50%, transparent 50%),
-    linear-gradient(0deg, transparent 50%, salmon 50%);
+  background-image: linear-gradient(210deg, pink 50%, transparent 50%),
+    linear-gradient(0deg, transparent 50%, pink 50%);
 }
 
 #john-ny-online .react-clock__face {
@@ -21,9 +95,10 @@ h2 {
     linear-gradient(0deg, transparent 50%, lightgreen 50%);
 }
 
+/* Manuel */
 #manuel-ny-offline .react-clock__face {
-  background-image: linear-gradient(30deg, salmon 50%, transparent 50%),
-    linear-gradient(-60deg, transparent 50%, salmon 50%);
+  background-image: linear-gradient(30deg, pink 50%, transparent 50%),
+    linear-gradient(-60deg, transparent 50%, pink 50%);
 }
 
 #manuel-ny-online .react-clock__face {
@@ -31,12 +106,103 @@ h2 {
     linear-gradient(-60deg, transparent 50%, lightgreen 50%);
 }
 
+/* Dev */
 #dev-ny-offline .react-clock__face {
-  background-image: linear-gradient(-30deg, salmon 50%, transparent 50%),
-    linear-gradient(90deg, transparent 50%, salmon 50%);
+  background-image: linear-gradient(-30deg, pink 50%, transparent 50%),
+    linear-gradient(90deg, transparent 50%, pink 50%);
 }
 
 #dev-ny-online .react-clock__face {
   background-image: linear-gradient(-30deg, lightgreen 50%, transparent 50%),
     linear-gradient(90deg, transparent 50%, lightgreen 50%);
+}
+
+/* SPAIN */
+/* Jp */
+#jp-eu-offline .react-clock__face {
+  background-image: linear-gradient(-180deg, pink 50%, transparent 50%),
+    linear-gradient(-90deg, transparent 50%, pink 50%);
+}
+
+#jp-eu-online .react-clock__face {
+  background-image: linear-gradient(-180deg, lightgreen 50%, transparent 50%),
+    linear-gradient(-90deg, transparent 50%, lightgreen 50%);
+}
+
+/* John */
+#john-eu-offline .react-clock__face {
+  background-image: linear-gradient(0deg, pink 50%, transparent 50%),
+    linear-gradient(210deg, transparent 50%, pink 50%);
+}
+
+#john-eu-online .react-clock__face {
+  background-image: linear-gradient(0deg, lightgreen 50%, transparent 50%),
+    linear-gradient(210deg, transparent 50%, lightgreen 50%);
+}
+
+/* Manuel */
+#manuel-eu-offline .react-clock__face {
+  background-image: linear-gradient(210deg, pink 50%, transparent 50%),
+    linear-gradient(120deg, transparent 50%, pink 50%);
+}
+
+#manuel-eu-online .react-clock__face {
+  background-image: linear-gradient(210deg, lightgreen 50%, transparent 50%),
+    linear-gradient(120deg, transparent 50%, lightgreen 50%);
+}
+
+/* Dev */
+#dev-eu-offline .react-clock__face {
+  background-image: linear-gradient(90deg, pink 50%, transparent 50%),
+    linear-gradient(-30deg, transparent 50%, pink 50%);
+}
+
+#dev-eu-online .react-clock__face {
+  background-image: linear-gradient(90deg, lightgreen 50%, transparent 50%),
+    linear-gradient(-30deg, transparent 50%, lightgreen 50%);
+}
+
+/* India */
+/* Jp */
+#jp-as-offline .react-clock__face {
+  background-image: linear-gradient(225deg, pink 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, pink 50%);
+}
+
+#jp-as-online .react-clock__face {
+  background-image: linear-gradient(225deg, lightgreen 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, lightgreen 50%);
+}
+
+/* John */
+#john-as-offline .react-clock__face {
+  background-image: linear-gradient(165deg, pink 50%, transparent 50%),
+    linear-gradient(315deg, transparent 50%, pink 50%);
+}
+
+#john-as-online .react-clock__face {
+  background-image: linear-gradient(165deg, lightgreen 50%, transparent 50%),
+    linear-gradient(315deg, transparent 50%, lightgreen 50%);
+}
+
+/* Manuel */
+#manuel-as-offline .react-clock__face {
+  background-image: linear-gradient(-15deg, pink 50%, transparent 50%),
+    linear-gradient(255deg, transparent 50%, pink 50%);
+}
+
+#manuel-as-online .react-clock__face {
+  background-image: linear-gradient(-15deg, lightgreen 50%, transparent 50%),
+    linear-gradient(255deg, transparent 50%, lightgreen 50%);
+}
+
+/* Dev */
+#dev-as-offline .react-clock__face {
+  background-image: linear-gradient(285deg, pink 50%, transparent 50%),
+    linear-gradient(45deg, transparent 50%, pink 50%);
+}
+
+#dev-as-online .react-clock__face {
+  background-image: linear-gradient(285deg, lightgreen 50%, transparent 50%),
+    linear-gradient(45deg, transparent 50%, lightgreen 50%);
 }
