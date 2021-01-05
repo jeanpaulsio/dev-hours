@@ -1,5 +1,18 @@
-h2 {
+h1, h2 {
   text-align: center;
+}
+
+.button-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.btn {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .clock-row {
